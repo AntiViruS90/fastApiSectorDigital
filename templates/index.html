@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+    <body>
+        <div class="container">
+            <!-- Time & date -->
+            <div class="time">
+                <h1 id="time">00:00:00</h1>
+                <p id="date">9 сентября, понедельник</p>
+            </div>
+
+            <!-- Погода -->
+            <div class="container block-weather mb-3">
+                <h1>Погода</h1>
+                <div class="weather container text-center d-flex justify-content-center">
+                    <input type="text" id="user-input" placeholder="Введите город" class="form-control w-50 w-md-50 d-inline-block">
+                    <button id="submit-btn" class="btn bg-primary">search</button>
+                </div>
+                <div id="display-weather">
+
+                </div>
+            </div>
+
+            <!-- Cписок задач -->
+            <h1 class="tasks-h1">Задачи на сегодня</h1>
+            <div class="tasks d-flex flex-column">
+                <input type="text" id="task-input" class="form-control mb3" placeholder="Введите новую задачу">
+                <ul id="task-list" class="list-group w-50">
+
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/static/scripts.js"></script>
+    </body>
+</html>
